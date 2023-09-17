@@ -7,8 +7,9 @@ def simple_list():
         result.append({"id":i,"age": random.randint(1,100)})
         return result
     
- 
-def sort_list():
-    pass
+ #Sort the list of dictionaries by age in ascending order
+def sort_list(dicts):
+    sorted_dicts = sorted(dicts, key=lambda x: x["age"])
+    return sorted_dicts
     
     
